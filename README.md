@@ -15,7 +15,7 @@ For example (with pseudo code):
 
 ```
 data.salt = GenerateRandomSalt();
-data.hash = hash(data.level + data.lv1src + [...] + data.salt);
+data.hash = GenerateHash(data.level + data.lv1src + [...] + data.salt);
 
 PlayerPrefs.SetString("hash", data.hash);
 PlayerPrefs.SetString("salt", data.salt);
